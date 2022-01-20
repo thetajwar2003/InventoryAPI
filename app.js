@@ -95,6 +95,6 @@ app.get('/csv/:id', async (req, res) => {
 
 const port = 3001;
 
-app.listen(port, () => {
+app.listen(port || process.env.PORT, () => {
     console.log("listening on port 3001");
 });
